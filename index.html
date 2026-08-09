@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kitabora — Kitab mağazası</title>
+<meta name="description" content="Kitabora — fiziki kitabların onlayn mağazası. Bakı və rayonlara çatdırılma.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#"><span>KB</span> Kitabora</a>
+  <nav><a href="#books">Kitablar</a><a href="#categories">Kateqoriyalar</a><a href="#about">Haqqımızda</a></nav>
+  <div class="actions"><button id="lang">AZ</button><button class="cart" id="openCart">Səbət <b id="cartCount">0</b></button><button class="menu" id="menuBtn">☰</button></div>
+</header>
+<main>
+<section class="hero">
+ <div><p class="eyebrow">OXUMAQ ÜÇÜN YENİ ÜNVAN</p><h1>Hər kitabda<br><em>yeni bir dünya.</em></h1>
+ <p class="lead">Sevdiyiniz kitabları rahat seçin, səbətə əlavə edin və Bakıdan Azərbaycanın rayonlarına qədər sifariş edin.</p>
+ <a class="primary" href="#books">Kitabları kəşf et <span>→</span></a></div>
+ <div class="hero-card"><div class="book-cover"><small>KITABORA</small><strong>Seçilmiş<br>hekayələr</strong><i>01</i></div></div>
+</section>
+
+<section class="strip"><div><b>✓</b> Nağd ödəniş</div><div><b>✓</b> Bakı və rayonlara çatdırılma</div><div><b>✓</b> 3 dildə mağaza</div><div><b>✓</b> Təhlükəsiz sifariş</div></section>
+
+<section id="categories" class="section"><div class="section-head"><div><p class="eyebrow">KATEQORİYALAR</p><h2>Oxumaq istədiyin janrı seç</h2></div></div>
+<div class="cats"><button data-cat="Roman">Roman</button><button data-cat="Psixologiya">Psixologiya</button><button data-cat="Biznes">Biznes</button><button data-cat="Uşaq">Uşaq</button><button data-cat="Tarix">Tarix</button><button data-cat="Fantastika">Fantastika</button></div></section>
+
+<section id="books" class="section"><div class="section-head"><div><p class="eyebrow">SEÇİLMİŞ KİTABLAR</p><h2>Oxucuların sevdikləri</h2></div><div class="search"><input id="search" placeholder="Kitab və ya müəllif axtar...">⌕</div></div>
+<div id="grid" class="grid"></div></section>
+
+<section id="about" class="about"><div><p class="eyebrow">KITABORA</p><h2>Kitab seçmək<br>sadə olmalıdır.</h2></div><p>Kitabora fiziki kitabları rahat şəkildə kəşf etmək, sifariş etmək və evinizə çatdırmaq üçün hazırlanmış müasir kitab mağazası konseptidir.</p></section>
+</main>
+
+<footer><div class="brand"><span>KB</span> Kitabora</div><p>© 2026 Kitabora. Bütün hüquqlar qorunur.</p><a href="admin.html">Admin panel →</a></footer>
+
+<div id="overlay" class="overlay hidden"></div>
+<aside id="cartPanel" class="cart-panel"><div class="cart-head"><h2>Səbət</h2><button id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-bottom"><div><span>Cəmi</span><strong id="total">0 ₼</strong></div><button class="primary full" id="checkout">Sifarişi rəsmiləşdir</button></div></aside>
+
+<div id="checkoutModal" class="modal hidden"><div class="modal-box"><button class="x" id="closeModal">×</button><p class="eyebrow">SİFARİŞ</p><h2>Çatdırılma məlumatları</h2><form id="orderForm"><input required name="name" placeholder="Ad və soyad"><input required name="phone" placeholder="Telefon"><select required name="city"><option value="">Şəhər / rayon seçin</option><option>Bakı</option><option>Gəncə</option><option>Sumqayıt</option><option>Şəki</option><option>Qəbələ</option><option>Lənkəran</option><option>Digər rayon</option></select><input required name="address" placeholder="Ünvan"><textarea name="note" placeholder="Qeyd (istəyə görə)"></textarea><div class="cash">Ödəniş: <b>Nağd, çatdırılma zamanı</b></div><button class="primary full">Sifarişi təsdiqlə</button></form></div></div>
+<script src="app.js"></script>
+</body></html>
