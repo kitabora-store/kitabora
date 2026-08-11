@@ -1,6 +1,10 @@
 # Kitabora
-Premium responsive bookstore starter.
 
-Open `index.html` for the storefront and `admin.html` for the demo admin panel.
+Pulsuz GitHub Pages üçün Kitabora sayt faylları.
 
-This package is a functional front-end prototype: cart and demo orders use browser localStorage. For real public deployment, replace this with a server/database, secure admin authentication, image uploads, multilingual content storage, and production hosting.
+- index.html — əsas səhifə
+- styles.css — dizayn
+- app.js — menyu funksiyası
+- admin.html — admin panelinin başlanğıcı
+
+Kitab kataloqu qəsdən hələ əlavə edilməyib; kitablar son mərhələdə yerləşdiriləcək.
