@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>MON CULUB — QR Menyu</title>
+<meta name="theme-color" content="#050505">
+<style>
+:root{--gold:#d7ad52;--gold2:#f3d98a;--bg:#050505;--card:#10100f;--muted:#bdb5a4}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:#fff;font-family:Georgia,"Times New Roman",serif}
+body{min-height:100vh;overflow-x:hidden}
+#intro{position:fixed;inset:0;background:radial-gradient(circle at 50% 65%,#17140d 0,#080806 42%,#000 78%);z-index:20;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.sky{position:absolute;inset:0;background:
+ radial-gradient(circle at 20% 20%,rgba(255,255,255,.75) 0 1px,transparent 2px),
+ radial-gradient(circle at 73% 16%,rgba(255,255,255,.65) 0 1px,transparent 2px),
+ radial-gradient(circle at 58% 30%,rgba(255,255,255,.5) 0 1px,transparent 2px),
+ radial-gradient(circle at 82% 47%,rgba(255,255,255,.5) 0 1px,transparent 2px),
+ radial-gradient(circle at 30% 54%,rgba(255,255,255,.45) 0 1px,transparent 2px);
+opacity:.55}
+.moon{width:120px;height:120px;border-radius:50%;background:linear-gradient(145deg,#fff1ae,#c89332);box-shadow:0 0 45px rgba(230,190,90,.55);position:absolute;left:50%;bottom:-150px;transform:translateX(-50%);animation:rise 1.9s cubic-bezier(.2,.8,.2,1) forwards}
+.moon:after{content:"";position:absolute;width:105px;height:105px;border-radius:50%;background:#050505;left:34px;top:-12px}
+.intro-logo{position:relative;text-align:center;opacity:0;animation:logo 1s 1.35s forwards}
+.intro-logo .m{font-size:58px;color:var(--gold2);letter-spacing:3px}
+.intro-logo h1{font-size:31px;letter-spacing:6px;margin:8px 0;color:var(--gold2)}
+.intro-logo p{margin:0;color:#d6c69d;letter-spacing:4px;font-size:12px}
+@keyframes rise{to{bottom:55%}}
+@keyframes logo{to{opacity:1;transform:translateY(-4px)}}
+#app{display:none;max-width:760px;margin:auto;padding-bottom:40px}
+.hero{height:230px;position:relative;display:flex;align-items:flex-end;padding:24px 20px;background:
+linear-gradient(to top,#050505 2%,rgba(5,5,5,.2) 70%,rgba(5,5,5,.45)),
+radial-gradient(circle at 50% 15%,rgba(217,173,82,.22),transparent 30%),
+linear-gradient(135deg,#17140e,#070707 55%,#11100d);border-bottom:1px solid #4a3a1b}
+.hero .moon-small{position:absolute;right:24px;top:28px;width:54px;height:54px;border-radius:50%;background:#e8c873;box-shadow:0 0 25px rgba(230,190,90,.35)}
+.hero .moon-small:after{content:"";position:absolute;width:49px;height:49px;border-radius:50%;background:#0b0b0a;left:15px;top:-5px}
+.brand{position:relative}
+.brand h1{margin:0;color:var(--gold2);font-size:38px;letter-spacing:6px}
+.brand p{margin:5px 0 0;color:#c8b98f;letter-spacing:4px;font-size:11px}
+.section{padding:24px 16px 0}
+.section-title{text-align:center;color:var(--gold2);font-size:22px;letter-spacing:3px;margin:5px 0 17px}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+.card{background:linear-gradient(145deg,#151512,#0b0b0a);border:1px solid #4b3a1b;border-radius:16px;padding:17px;box-shadow:0 10px 28px rgba(0,0,0,.35)}
+.card-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.card h2{font-size:20px;margin:0;color:#f1d68b;letter-spacing:1px}
+.price{white-space:nowrap;border:1px solid #a27b2d;border-radius:20px;padding:6px 12px;color:#f4d77e;font-weight:bold}
+.items{margin:13px 0 0;padding-left:18px;color:#eee;line-height:1.65;font-family:Arial,sans-serif;font-size:14px}
+.divider{height:1px;background:linear-gradient(90deg,transparent,#6e5222,transparent);margin:24px 0 4px}
+footer{text-align:center;color:#9e967f;font-family:Arial,sans-serif;font-size:12px;padding:30px 16px}
+</style>
+</head>
+<body>
+<div id="intro">
+  <div class="sky"></div><div class="moon"></div>
+  <div class="intro-logo"><div class="m">☾</div><h1>MON CULUB</h1><p>LOUNGE &amp; RESTAURANT</p></div>
+</div>
+
+<main id="app">
+  <header class="hero">
+    <div class="moon-small"></div>
+    <div class="brand"><h1>MON CULUB</h1><p>LOUNGE &amp; RESTAURANT</p></div>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">🍵 ÇAY SETLƏRİ</h2>
+    <div class="grid">
+      <article class="card"><div class="card-head"><h2>Çay Seti 1</h2><div class="price">25 AZN</div></div>
+        <ul class="items"><li>Çay</li><li>Şokolad</li><li>Rulet</li><li>Qəlyan</li></ul></article>
+      <article class="card"><div class="card-head"><h2>Çay Seti 2</h2><div class="price">35 AZN</div></div>
+        <ul class="items"><li>Çay</li><li>Şokolad</li><li>Rulet</li><li>Mürəbbə</li><li>Qəlyan</li><li>Çərəz</li></ul></article>
+      <article class="card"><div class="card-head"><h2>Çay Seti 3</h2><div class="price">50 AZN</div></div>
+        <ul class="items"><li>2 Çay</li><li>Şokolad</li><li>Rulet</li><li>Paxlava</li><li>Mürəbbə</li><li>Çərəz</li><li>Qreypfrut Qəlyan</li></ul></article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="divider"></div>
+    <h2 class="section-title">🍺 PİVƏ SETLƏRİ</h2>
+    <div class="grid">
+      <article class="card"><div class="card-head"><h2>Pivə Seti 1</h2><div class="price">35 AZN</div></div>
+        <ul class="items"><li>NZS 8 — bakal</li><li>Düşbərə — Cipsi</li><li>Pətənə — Pendir</li><li>Boğaz — Püstə</li><li>Çiko — Noxud</li></ul></article>
+      <article class="card"><div class="card-head"><h2>Pivə Seti 2</h2><div class="price">45 AZN</div></div>
+        <ul class="items"><li>NZS 12 — bakal</li><li>Düşbərə — Suxari</li><li>Pətənə — Noxud</li><li>Qızardılmış pendir — Pendir sadə</li><li>Boğaz — Sosiska</li><li>Püstə — Qanad</li><li>Cipsi — Çiko</li></ul></article>
+      <article class="card"><div class="card-head"><h2>Pivə Seti 3</h2><div class="price">60 AZN</div></div>
+        <ul class="items"><li>NZS 16 — Bakal</li><li>Düşbərə — İveriya</li><li>Pətənə — Püstə</li><li>Pendir Q — Pendir S</li><li>Boğaz — Cipsi</li><li>Bildirçin — Noxud</li><li>Kilkə — Suxarı</li><li>Şamayka — Qanda</li><li>Çiko — Pendir çubuğu</li><li>Firi — böyük pors</li><li>Fimi — böyük pors</li><li>Qəlyan</li></ul></article>
+    </div>
+  </section>
+  <footer>MON CULUB · Xoş gəlmisiniz</footer>
+</main>
+
+<script>
+setTimeout(()=>{document.getElementById('intro').style.display='none';document.getElementById('app').style.display='block';document.body.style.overflow='auto'},3200);
+</script>
+</body>
+</html>
