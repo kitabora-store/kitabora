@@ -1,1 +1,73 @@
-<!doctype html><html lang="az"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kitabora — Onlayn Kitab Mağazası</title><link rel="stylesheet" href="styles.css"></head><body><header><div class="container nav"><a class="logo" href="index.html">Kitabora</a><nav><a class="active" href="index.html">Ana səhifə</a><a href="#about">Haqqımızda</a><a href="#contact">Əlaqə</a><a href="#catalog">Kitablar</a></nav><button id="menuBtn">☰</button></div></header><main><section class="hero"><div class="container hero-grid"><div><small>📚 KITABORA</small><h1>Sevdiyin kitabı<br><span>asanlıqla tap.</span></h1><p>Kitab sevənlər üçün sadə, rahat və sürətli onlayn kitab mağazası.</p><a class="btn" href="#catalog">Kataloqa bax</a></div><div class="hero-card"><div>📖</div><h2>Kitab dünyasına xoş gəlmisən</h2><p>Kitablarımızı əsas sistem hazır olduqdan sonra əlavə edəcəyik.</p></div></div></section><section class="section" id="catalog"><div class="container"><small>KATALOQ</small><h2>Kitablar</h2><div class="empty"><div>📚</div><h3>Kataloq hazırlanır</h3><p>Kitabları ən son mərhələdə əlavə edəcəyik.</p></div></div></section><section class="section light" id="about"><div class="container"><small>NİYƏ KITABORA?</small><h2>Sadə və rahat alış təcrübəsi</h2><div class="cards"><article>🔎 <b>Rahat axtarış</b><p>Kitabları asan tapmaq üçün rahat interfeys.</p></article><article>🛒 <b>Səbət</b><p>Seçilən məhsulları səbətdə toplamaq.</p></article><article>📱 <b>Mobil uyğunluq</b><p>Telefon və kompüter üçün uyğun dizayn.</p></article></div></div></section><section class="section" id="contact"><div class="container contact"><div><small>ƏLAQƏ</small><h2>Kitabora ilə əlaqə</h2><p>Əlaqə məlumatlarını sonra əlavə edəcəyik.</p></div></div></section></main><footer><div class="container">Kitabora © 2026</div></footer><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MOON CLUB</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#030611;color:#fff;font-family:Arial,sans-serif}
+#intro{position:fixed;inset:0;background:radial-gradient(circle,#18234d,#030611 65%);z-index:10;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.stars{position:absolute;inset:0;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:75px 75px;opacity:.45}
+.moon{width:145px;height:145px;border-radius:50%;position:absolute;bottom:-180px;background:#eef2ff;box-shadow:0 0 35px #fff,0 0 100px #8ea1ff;animation:rise 2.5s ease-out .2s forwards}
+.moon:after{content:"";position:absolute;width:145px;height:145px;border-radius:50%;left:48px;top:-12px;background:#080d21}
+.logo{position:absolute;text-align:center;opacity:0;top:58%;animation:show 1s ease 2.1s forwards}
+.logo h1{margin:0;letter-spacing:8px;font-size:40px}.logo p{letter-spacing:4px;color:#bdc8f3}
+@keyframes rise{to{bottom:42%}}@keyframes show{to{opacity:1;transform:translateY(-10px)}}
+#menu{display:none;max-width:850px;margin:auto;padding:25px 14px 50px}
+header{text-align:center;padding:10px 0 22px}header h1{letter-spacing:7px;margin:0;font-size:32px}
+header p{color:#aeb9e8;letter-spacing:3px}
+h2{font-size:20px;letter-spacing:2px;margin:0}
+.category{margin:20px 0 9px;padding:13px 15px;border-radius:14px;background:#111b3b;border:1px solid #33406d}
+.card{padding:14px 16px;margin-bottom:12px;border-radius:14px;background:#080e24;border:1px solid #202b4e}
+.simple{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid #18213d}
+.simple:last-child{border:0}.sub{line-height:1.65;color:#d8ddf4}.price{font-weight:bold;white-space:nowrap}.setprice{text-align:right;font-weight:bold;font-size:18px;margin-top:8px;color:#dce4ff}
+.wh{display:grid;grid-template-columns:1fr 70px 70px 70px;gap:8px;font-weight:bold;color:#cbd4ff}
+.wr{display:grid;grid-template-columns:1fr 70px 70px 70px;gap:8px;padding:9px 0;border-top:1px solid #18213d}.c{text-align:center}
+@media(max-width:500px){.wh,.wr{grid-template-columns:1fr 55px 55px 55px;font-size:13px}.logo h1{font-size:30px}}
+</style>
+</head>
+<body>
+<div id="intro"><div class="stars"></div><div class="moon"></div><div class="logo"><h1>MOON CLUB</h1><p>MENYUYA XOŞ GƏLMİSİNİZ</p></div></div>
+<main id="menu">
+<header><h1>MOON CLUB</h1><p>MENYU</p></header>
+
+<div class="category"><h2>Çay seti 1</h2></div><div class="card"><div class="sub">Çay<br>Şokolad<br>Rulet<br>Qəlyan</div><div class="setprice">25 AZN</div></div>
+<div class="category"><h2>Çay seti 2</h2></div><div class="card"><div class="sub">Çay<br>Şokolad<br>Rulet<br>Mürəbbə<br>Qəlyan<br>Çərəz</div><div class="setprice">35 AZN</div></div>
+<div class="category"><h2>Çay seti 3</h2></div><div class="card"><div class="sub">2-Çay<br>Şokolad<br>Rulet<br>Paxlava<br>Mürəbbə<br>Çərəz<br>Qreypfrut Qəlyan</div><div class="setprice">50 AZN</div></div>
+
+<div class="category"><h2>Pivə seti 1</h2></div><div class="card"><div class="sub">NZS 8 - bakal<br>Düşbərə - Cipsi<br>Pətənə - Pendir<br>Boğaz - Püstə<br>Çiko - Noxud</div><div class="setprice">35 AZN</div></div>
+<div class="category"><h2>Pivə seti 2</h2></div><div class="card"><div class="sub">NZS 12 - bakal<br>Düşbərə - Suxari<br>Pətənə - Noxud<br>Qızardılmış pendir - Pendir sadə<br>Boğaz - Sosiska<br>Püstə - Qanad<br>Cipsi - Çiko</div><div class="setprice">45 AZN</div></div>
+<div class="category"><h2>Pivə seti 3</h2></div><div class="card"><div class="sub">NZS 16 - Bakal<br>Düşbərə - İveriya<br>Pətənə - Püstə<br>Pendir Q - Pendir S<br>Boğaz - Cipsi<br>Bildirçin - Noxud<br>Kilkə - Suxarı<br>Şamayka - Qanda<br>Çiko - Pendir çubuğu<br>Firi böyük pors<br>Fimi böyük pors<br>Qəlyan</div><div class="setprice">60 AZN</div></div>
+
+<div class="category"><h2>Çay</h2></div><div class="card">
+<div class="simple"><span>Çay - Qoz</span><b>10 AZN</b></div><div class="simple"><span>Çay - Kakos</span><b>10 AZN</b></div><div class="simple"><span>Çay - Gilas</span><b>10 AZN</b></div><div class="simple"><span>Çay - Çiyələk</span><b>10 AZN</b></div><div class="simple"><span>Çay - Paxlava</span><b>8 AZN</b></div><div class="simple"><span>Çay - Pletka</span><b>8 AZN</b></div><div class="simple"><span>Çay - Rulet</span><b>8 AZN</b></div><div class="simple"><span>Çay - Snickers</span><b>6 AZN</b></div></div>
+
+<div class="category"><h2>Qəlyan</h2></div><div class="card"><div class="simple"><span>Sadə qəlyan</span><b>12 AZN</b></div><div class="simple"><span>Qreypfrut</span><b>20 AZN</b></div><div class="simple"><span>Ananas</span><b>25 AZN</b></div></div>
+
+<div class="category"><h2>Məzələr</h2></div><div class="card">
+<div class="simple"><span>Krivetka okean</span><b>15 AZN</b></div><div class="simple"><span>Toyuq popkorn</span><b>5 AZN</b></div><div class="simple"><span>Düşbərə</span><b>5 AZN</b></div><div class="simple"><span>Pətənə</span><b>5 AZN</b></div><div class="simple"><span>Pətənə turşulu</span><b>6 AZN</b></div><div class="simple"><span>Boğaz qızartma</span><b>5 AZN</b></div><div class="simple"><span>Boğaz qızartma turşulu</span><b>6 AZN</b></div><div class="simple"><span>Boğaz hissə verilmiş</span><b>4 AZN</b></div><div class="simple"><span>Pendir sadə</span><b>3 AZN</b></div><div class="simple"><span>Pendir qızartma</span><b>5 AZN</b></div><div class="simple"><span>Pendir çubuqları</span><b>5AZN</b></div><div class="simple"><span>Göbələk cipsi</span><b>5 AZN</b></div><div class="simple"><span>Toyuq naggest</span><b>5 AZN</b></div><div class="simple"><span>Qrenki sadə</span><b>4 AZN</b></div><div class="simple"><span>Qrenki pendirli</span><b>6 AZN</b></div><div class="simple"><span>Fimi</span><b>6 AZN</b></div><div class="simple"><span>Kartof fri</span><b>5 AZN</b></div><div class="simple"><span>Balıq çubuqları</span><b>5 AZN</b></div><div class="simple"><span>İveriya 3 əd</span><b>7 AZN</b></div><div class="simple"><span>Bildirçin</span><b>5 AZN</b></div><div class="simple"><span>Qovrulmuş çiko</span><b>3 AZN</b></div><div class="simple"><span>Cipsi</span><b>4 AZN</b></div><div class="simple"><span>Suxarı</span><b>3 AZN</b></div><div class="simple"><span>Noxud</span><b>3 AZN</b></div><div class="simple"><span>Kilkə</span><b>3 AZN</b></div><div class="simple"><span>Şamayka</span><b>3 AZN</b></div>
+</div>
+
+<div class="category"><h2>Spirtsiz içkilər</h2></div><div class="card">
+<div class="simple"><span>Coca cola 1 L</span><b>4 AZN</b></div><div class="simple"><span>Coca cola banka</span><b>4 AZN</b></div><div class="simple"><span>Fuse tea</span><b>4 AZN</b></div><div class="simple"><span>Hell</span><b>4 AZN</b></div><div class="simple"><span>Bizon</span><b>4 AZN</b></div><div class="simple"><span>Sirab</span><b>4 AZN</b></div><div class="simple"><span>Natura</span><b>5 AZN</b></div><div class="simple"><span>Efes zero</span><b>5 AZN</b></div><div class="simple"><span>Redbull</span><b>8 AZN</b></div><div class="simple"><span>Badamlı</span><b>4 AZN</b></div>
+</div>
+
+<div class="category"><h2>Pivələr</h2></div><div class="card">
+<div class="simple"><span>Efes draft</span><b>8 AZN bu</b></div><div class="simple"><span>Carona</span><b>8 AZN</b></div><div class="simple"><span>Miller</span><b>8 AZN</b></div><div class="simple"><span>Jiqulevskoe</span><b>6 AZN</b></div><div class="simple"><span>Xırdalan</span><b>6 AZN</b></div><div class="simple"><span>Kuller</span><b>6 AZN</b></div><div class="simple"><span>Xırdalan (no filtr)</span><b>3 AZN</b></div><div class="simple"><span>NZS</span><b>2 AZN</b></div>
+</div>
+
+<div class="category"><h2>Viskilər</h2></div><div class="card">
+<div class="wh"><span></span><span class="c">0.5</span><span class="c">0.7</span><span class="c">1 lt</span></div>
+<div class="wr"><span>Jemson</span><span class="c">70</span><span class="c">80</span><span class="c">110</span></div>
+<div class="wr"><span>Jek deniels</span><span class="c">75</span><span class="c">85</span><span class="c">115</span></div>
+<div class="wr"><span>Chivas</span><span class="c">80</span><span class="c">100</span><span class="c">120</span></div>
+<div class="wr"><span>Jager master</span><span class="c">55</span><span class="c">80</span><span class="c">100</span></div>
+<div class="wr"><span>Tequila</span><span class="c">55</span><span class="c">80</span><span class="c">100</span></div>
+<div class="wr"><span>Balantines</span><span class="c">45</span><span class="c">70</span><span class="c">90</span></div>
+</div>
+</main>
+<script>
+setTimeout(()=>{document.getElementById('intro').remove();document.getElementById('menu').style.display='block'},4000);
+</script>
+</body>
+</html>
